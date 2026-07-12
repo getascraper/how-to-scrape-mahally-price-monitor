@@ -1,0 +1,54 @@
+# getascraper/how-to-scrape-mahally-price-monitor
+
+> Mahally Price Monitor is an Apify Actor that tracks price and stock changes on Mahally, Saudi Arabia's local store marketplace, by keyword or store. Free tier available.
+
+## Overview
+- Mahally scraper and price change monitoring data extraction API
+- Extracts: price, sale price, stock status, discount percentage, store details
+- Output formats: JSON, CSV, Excel, XML, RSS
+- Free tier: included
+
+## Key Pages
+- README: https://github.com/getascraper/how-to-scrape-mahally-price-monitor/blob/main/README.md
+- Apify Store: https://apify.com/getascraper/mahally-price-monitor
+- Apify Console: https://console.apify.com/actors/getascraper~mahally-price-monitor
+- Source Actor: https://github.com/getascraper/actorstack/tree/main/actors/mahally-price-monitor
+
+## How it works
+1. Add Arabic or English search keywords, or Mahally store IDs to watch.
+2. On each scheduled run, the Actor checks current prices and stock, then compares them against the previous run.
+3. Only products whose price or stock status changed are returned, so every run stays small and focused.
+
+## Target site characteristics
+- Mahally is a marketplace for local Salla-powered stores across Saudi Arabia
+- Product and store listings are public and cover many cities and categories
+- Data includes bilingual (Arabic and English) product names and store details
+
+## API Usage
+- Node.js SDK: https://docs.apify.com/api/client/js
+- REST API: https://docs.apify.com/api/v2
+- MCP server: https://github.com/apify/apify-mcp-server
+
+## Supported target URLs
+- https://mahally.com/ar/stores/<id>/
+- Mahally product search results by Arabic or English keyword
+
+## Pricing
+- Free tier: included
+- Paid: $0.70 per 1,000 results
+
+## Output schema (highlights)
+- price, salePrice, regularPrice, discountPercentage: current pricing details
+- inStock, status: availability
+- changeType, oldPrice, priceDelta, isChanged: what changed since the last run
+- storeName, storeId, city, storeRating: store details
+
+## Use cases
+- Reseller sourcing discounted goods watching for a price drop
+- Brand manager confirming store prices match agreed terms
+- Analyst tracking competitor pricing trends across Saudi stores
+- Shopper waiting for a wishlist item to go on sale
+
+## Support
+- GitHub Issues: https://github.com/getascraper/how-to-scrape-mahally-price-monitor/issues
+- Apify Console: https://console.apify.com/actors/getascraper~mahally-price-monitor/issues

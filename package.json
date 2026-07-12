@@ -1,0 +1,38 @@
+{
+  "name": "how-to-scrape-mahally-price-monitor",
+  "version": "1.0.0",
+  "description": "Scheduled price and stock change monitor for Mahally, Saudi Arabia's local store marketplace. Alerts on price drops, new listings, and back in stock items by keyword or store.",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "keywords": [
+    "apify",
+    "apify-actor",
+    "price-monitoring",
+    "stock-alerts",
+    "ecommerce",
+    "data-extraction",
+    "price-tracker",
+    "mahally",
+    "mahally-scraper",
+    "mahally-data",
+    "mahally-prices",
+    "saudi-arabia",
+    "saudi-ecommerce",
+    "middle-east",
+    "local-stores",
+    "marketplace-monitoring",
+    "price-drop-alerts",
+    "back-in-stock",
+    "reseller-tools",
+    "competitor-pricing"
+  ],
+  "author": "Devansh-365",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apify-client": "^2.12.0",
+    "dotenv": "^16.5.0"
+  }
+}
